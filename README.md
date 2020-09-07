@@ -2,4 +2,10 @@
 Poem,
 Markup,
 Wishlist,
-Calendar
+Calendar,
+Register Form, 
+Detail, 
+Master, 
+Audio, 
+Video, 
+VMG
