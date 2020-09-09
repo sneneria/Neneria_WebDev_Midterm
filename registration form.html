@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Register From</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=">
+	<style>
+		*{
+			font-family:'Arial';   
+		}
+		h1
+		{
+			font-size: 40px;
+		}
+		p
+		{
+			font-size: 14px;
+		}
+		</style>
+</head>
+<center>
+<body style = "background-color:pink">
+<form>
+	<h1 style = "color:red">Registeration Form</h1>
+	<p align = "center">This register coming form the websites that involve education online or a school's online<br>website for profiling faculty and students.</p>
+	<table> 
+		<tr>
+			<td><strong>Full Name:</strong></td><br>
+			<td><input type = "text" id = "frstname" name = "frstname" placeholder =  "Firstname"/> 
+			<input type = "text" id = "lstname" name = "lstname" placeholder = "Last Name"/>
+			</td>
+		</tr>
+		<tr> 
+			<td><strong>Email:</strong></td>
+			<td><input type = "email" name="email" placeholder="Enter your email"/>
+		</tr>
+		
+		<tr>
+			<td><strong>Password:</strong></td>
+			<td><input type = "password" id = "txtPassword" name = " txtPassword" placeholder = "Enter your password"/>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Birthdate:</td>
+			<td><input type="date" id="birthday" name="birthday"></td>
+		</tr>
+		
+		<tr>
+			<td><strong>Gender:</strong></td>
+			<td> 
+			<input type = "radio" id = "male" name = "gender" value = "male">
+			<label for = "male">Male</label>
+			<input type = "radio" id = "female" name = "gender" value = "female"> 
+			<label for = "female">Female</label>
+			<input type = "radio" id = "other" name = "gender" value = "other">
+			<label for = "other">Other</label>
+			<br>
+			
+		</tr>
+		
+		
+		<tr>
+          <td colspan="2">
+            <strong>Position/Role:</strong>
+            <select name="drpRoleType" id="drpRoleType">
+              <option value="Student">Student</option>
+              <option value="Faculty">Faculty</option>
+            </select>
+          </td>
+        </tr>
+		
+		<tr>
+          <td colspan="2">
+            <input type="checkbox" 
+                   id="cbxPolicy1"
+                   name="cbxPolicy1"
+                   value="I accept lorem ipsum"/>
+            <label for="cbxPolicy1">I accept the <strong>Terms and Conditions & Privacy Pocily.</strong></label>
+          </td>
+        </tr>
+		
+		
+		<tr> 
+			<td colspan = "2" align = "right">
+			<button id = "btnlogin" onclick = "alert(document.getElementById('frstName').value)">Register</button>
+			<button id="btnReset" onClick="reset">Clear
+			</button>
+			</td>
+		</tr>
+		</table>
+</form>
+</body>
+</center>
+</head>
+</html>
