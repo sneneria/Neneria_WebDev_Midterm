@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Master Detail Pattern</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+	 *, *::before, *::after {
+            box-sizing: border-box;
+        }
+		.title {
+            position: relative;
+            left: 275px;
+            margin: 100px 0px 30px 0px;
+        }
+
+        .container {
+            display: flex;
+            border: solid 2px #333;
+            
+            width: 800px;
+            margin: 0px auto;
+        }
+
+        .master-trigger {
+            border-right: solid 2px #333;
+        }
+
+        .master-trigger ul {
+            padding: 0;
+        }
+        
+        .trigger-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 200px;
+            list-style: none;
+        }
+
+        .trigger-list {
+            margin: 0;
+        }
+
+        .trigger-list li  {
+            vertical-align: middle;
+            border-bottom: solid 2px #333;
+        }
+
+        .trigger-list li div, .trigger-list li label {
+            display: block;
+            width: 200px;
+
+            text-align: center;
+            padding: 15px 0px;
+        }
+        
+        .trigger-list li:nth-child(2):hover,
+        .trigger-list li:nth-child(3):hover,
+        .trigger-list li:nth-child(4):hover,
+        .trigger-list li:nth-child(5):hover,
+        .trigger-list li:nth-child(6):hover  {
+            background-color: #a9a9a9b9;
+        }
+        
+        .trigger-list li label {
+            cursor: pointer;
+        }
+
+        .details {
+            display: none;
+        }
+
+       .radioHide {
+            display: none;
+        }
+
+        input:checked + .details {
+            display: block;
+        }
+
+        .calendar-details {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .wishlist-details {
+            z-index: 10;
+            position: absolute;
+
+            width: 600px;
+            margin: 20px 0px 0px 135px;
+        }
+
+        .detail-container {
+           margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body  style = "background-color: pink;">
+	<h1 class="title">Master Detail Pattern</h1>
+    <div class="container">
+        <div class="master-trigger">
+            <ul class="trigger-list">
+			 <li><div id="activites"><strong>Activities</strong></div></li>
+                <!--Master list-->
+                <li><label for="tab1">Registration Page</label></li>
+                <li><label for="tab2">Calendar Page</label></li>
+                <li><label for="tab3">Wish list Page</label></li>
+                <li><label for="tab4">Markup Page</label></li>
+                <li><label for="tab5">Poem Page</label></li>
+            </ul>
+        </div>
+		<div class="details-container">
+            <div class="detail-container">
+                <!--detail of registration.html-->
+                <input class="radioHide" checked type="radio" id="tab1" name="master-details"/>
+                <div class="details">
+                    <div>
+                        <div align="center">
+						<h1>Registration From</h1>
+						<p>This register coming form the websites <br>that involve education 
+						online or a school's online website <br>for profiling faculty and students.</p>
+					 </div>
+                        <br/>
+                        <hr width="500px"/>
+                        <br/>
+                        <div align="center" style="width: 600px; margin: 0 auto;">
+                            <form action=""> 
+                                <table >
+                                    <tr>
+                                        <td><strong>Full Name:</strong></td><br>
+										<td><input type = "text" id = "frstname" name = "frstname" placeholder =  "Firstname"/> 
+										<input type = "text" id = "lstname" name = "lstname" placeholder = "Last Name"/>
+										</td>
+										</tr>
+										<tr> 
+										<td><strong>Email:</strong></td>
+										<td><input type = "email" name="email" placeholder="Enter your email"/>
+										</tr>
+		
+										<tr>
+										<td><strong>Password:</strong></td>
+										<td><input type = "password" id = "txtPassword" name = " txtPassword" placeholder = "Enter your password"/>
+										</td>
+											</tr>
+											<tr>
+												<td><strong>Birthdate:</td>
+												<td><input type="date" id="birthday" name="birthday"></td>
+											</tr>
+											
+											<tr>
+												<td><strong>Gender:</strong></td>
+												<td> 
+												<input type = "radio" id = "male" name = "gender" value = "male">
+												<label for = "male">Male</label>
+												<input type = "radio" id = "female" name = "gender" value = "female"> 
+												<label for = "female">Female</label>
+												<input type = "radio" id = "other" name = "gender" value = "other">
+												<label for = "other">Other</label>
+												<br>
+												
+											</tr>
+											
+											
+											<tr>
+											  <td colspan="2">
+												<strong>Position/Role:</strong>
+												<select name="drpRoleType" id="drpRoleType">
+												  <option value="Student">Student</option>
+											  <option value="Faculty">Faculty</option>
+											</select>
+										  </td>
+										</tr>
+										
+										<tr>
+										  <td colspan="2">
+											<input type="checkbox" 
+												   id="cbxPolicy1"
+												   name="cbxPolicy1"
+												   value="I accept lorem ipsum"/>
+											<label for="cbxPolicy1">I accept the <strong>Terms and Conditions & Privacy Pocily.</strong></label>
+										  </td>
+										</tr>
+										
+										
+										<tr> 
+											<td colspan = "2" align = "right">
+											<button id = "btnlogin" onclick = "alert(document.getElementById('frstName').value)">Register</button>
+											<button id="btnReset" onClick="reset">Clear
+											</button>
+											</td>
+						</tr>
+						</table>
+					</form>
+				</div>
+				<br/>
+					<hr width="500px"/>
+				</div>
+				</div>
+			</div>
+
+ <div class="detail-container">
+                 <!--detail of calendar.html-->
+                <input class="radioHide" type="radio" id="tab2" name="master-details"/>
+                <div class="details">
+                    <div class="calendar-details">
+					<h1 align="center">Calendar</h1>
+                        <table border="1" align="center" width="500" style="border-collapse: collapse;">
+                            <tr height="35px">
+							 <th align="center" colspan="7">December 2000</th>
+                            </tr>
+							<tr height="35px">
+								<td style="color:red">Sun</td>
+								<td>Mon</td>
+								<td>Tue</td>
+								<td>Wed</td>
+								<td>Thu</td>
+								<td>Fri</td>
+								<td>Sat</td>
+							</tr>
+							 <tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>1</td>
+								<td style = "color:gray">2</td>
+						   </tr>
+						   <tr>
+								<td style = "color:red">3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td style = "color:gray">9</td>
+							</tr>	
+							<tr> 
+								<td style = "color:red">10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td style = "color:gray">16</td>
+						   </tr>
+						   <tr> 
+								<td style = "color:red">17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td style = "color:gray">23</td>
+						   </tr>
+						   <tr> 
+								<td style = "color:red">24</td>
+								<td style = "color:red">25</td>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+								<td style = "color:red"><strong>29</strong></td>
+								<td style = "color:red">30</td>
+						   </tr>
+						   <tr>
+								<td style = "color:red">31</td>
+							</tr>
+							<hr width="500px"/>
+							<p>My birthday : <strong>29</strong></p>
+                        </table>
+                    </div>
+                </div>
+            </div>
+			 <div class="detail-container">
+                 <!--detail of wishlist.html-->
+                <input class="radioHide" type="radio" id="tab3" name="master-details"/>
+                <div class="details">
+                    <div class="wishlist-details">
+					  <h1>My Wishlist: </h1>
+                        <ol>
+							<li>BTS light stick</li>
+							<li>BTS concert tickets</li>
+							<li>Apple Iphone 11pro Max</li>
+							<li>Apple MacBook Pro</li>
+							<li>Dell XPS 15(2020)</li>
+							<li>To Stop COVID19</li>
+							<li>apple watch</li>
+							<li>oversized tshirt</li>
+						</ol>
+					</div>
+                </div>
+            </div>
+			<div class="detail-container">
+                 <!--detail of markup.html-->
+                <input class="radioHide" type="radio" id="tab4" name="master-details"/>
+                <div class="details">
+				<h1 align="center"><em><strong>The Past Change</em></strong></h1>
+				<p align="center">The<strong>past is the past</strong> for a reason.<br>
+				That is where it is supposed to stay,<br>
+				But some cannot <strong>let it go.</strong><br>
+				In their heads it eats away 
+				<br>
+				<br>
+				Until all their focus becomes<br>
+				The person they used to be,<br>
+				The <em>mistakes</em> they made in their life.<br>
+				<br>
+				<br>
+				That you cannot change what happened,<br>
+				<strong>No matter how hard you try,</strong><br>
+				<strong>No matter how much you think about it,</strong><br>
+				<strong>No matter how much you cry.</strong>
+				<br>
+				<br>
+				What happens in your <em>lifetime</em><br>
+				<em>Happens for reasons unknown</em>,<br>
+				Let your story be shown. 
+				<br>	
+				<br>
+				Don't get wrapped up in the<em>negative.</em> <br>
+				Be happy with what you have been given.<br>
+				Live for <em>today not tomorrow.</em><br>
+				<strong>Get up, get out, and start living,</strong>
+				<br>
+				<br>
+				Because the past is the past for a reason.<br>
+				It's been, and now it is gone,<br>
+				So stop trying to think of ways to fix it.<br>
+				It's done, it's unchangeable; <em><strong>move on!</em></strong> 
+				<br>
+				<br>
+				</p>
+			  </div>
+            </div> 
+			
+			 <div class="detail-container">
+                 <!--detail of poem.html-->
+                <input class="radioHide" type="radio" id="tab5" name="master-details"/>
+                <div class="details">
+                    <h1 align="center">The Past Change </h1>
+					<p align = "center">
+					The past is the past for a reason.<br>
+					That is where it is supposed to stay,<br>
+					But some cannot let it go.<br>
+					In their heads it eats away 
+					<br>
+					<br>
+					Until all their focus becomes<br>
+					The person they used to be,<br>
+					The mistakes they made in their life.<br>
+					<br>
+					<br>
+					That you cannot change what happened,<br>
+					No matter how hard you try,<br>
+					No matter how much you think about it,<br>
+					No matter how much you cry. 
+					<br>
+					<br>
+					What happens in your lifetime<br>
+					Happens for reasons unknown,<br>
+					So you have to let the cards unfold.<br>
+					Let your story be shown. 
+					<br>
+					<br>
+					Don't get wrapped up in the negative. <br>
+					Be happy with what you have been given.<br>
+					Live for today not tomorrow.<br>
+					Get up, get out, and start living, 
+					<br>
+					<br>
+					Because the past is the past for a reason.<br>
+					It's been, and now it is gone,<br>
+					So stop trying to think of ways to fix it.<br>
+					It's done, it's unchangeable; move on. 
+					<br>
+					<br>
+					</p>
+				</div>
+            </div>         
+        </div>
+    </div>
+					
+</body>
+</html>
