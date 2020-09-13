@@ -9,6 +9,6 @@ Calendar: https://sneneria.github.io/Neneria_WebDev_Midterm/calendar.html
 
 Register Form: https://sneneria.github.io/Neneria_WebDev_Midterm/registration%20form.html
 
-Master Detail: 
+Master Detail: https://sneneria.github.io/Neneria_WebDev_Midterm/masterdetail.html
 
 VMG : https://sneneria.github.io/Neneria_WebDev_Midterm/vmg.html
