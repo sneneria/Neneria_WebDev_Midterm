@@ -1,0 +1,54 @@
+ body{
+	background: url('https://png.pngtree.com/thumb_back/fh260/background/20200818/pngtree-beautiful-floral-design-seamless-pattern-background-image_392166.jpg');
+	background-size: 350px;
+	}
+* {
+  color: #fff;
+  font-size: 20px;
+  line-height: 2;
+  font-family: "Arial";
+}
+
+td, th{
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+table{
+  background: #4b80db;
+}
+
+th{
+  background: #bfa41f;
+}
+
+b{
+  color: #ed0b05;
+  transition: 3s;
+  font-weight: bolder;
+}
+
+b:hover{
+  color: #e6328f;
+  transition: 2s;
+  cursor: pointer;
+}
+
+#month{
+  background: #;
+  width: 430px;
+  margin: auto;
+  position: relative;
+  top: 60px;
+}
+
+h1{
+  font-family: 'Times New Roman';
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: #fff;
+  text-shadow: 3px 3px 8px #000;
+}
