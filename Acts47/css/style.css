@@ -1,0 +1,80 @@
+header{
+   background-position: fixed;
+    height: 70x;
+    width: 100%;
+    margin-top: -1%;
+    z-index: 400;
+   background-color:hsla(120,100%,25%,0.3);;
+    }
+
+header div.container nav, header div.container h1 {
+        flex: 1 100px; }
+
+      header div.container nav {
+        flex-grow: 2; }
+
+    header nav {
+      display: flex;
+      justify-content: space-around; }
+
+      header nav a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em; 
+        font-family: pinksans;}
+
+        header nav a:hover {
+          color: #002635;
+          background: #fff; }
+
+        header nav a span {
+          align-self: center; }   
+#img1{
+    background: url("https://sneneria.github.io/Neneria_WebDev_Midterm/img/Bangtan.jpg")no-repeat center;
+    height: 500px;
+    
+}
+body {
+  background: #7d3982;
+}
+h1{
+    font-size: 200%;
+    font-family: Bahnschrift SemiBold;
+    letter-spacing: 0.02em;
+    text-shadow: 50%;
+    text-align: center;
+}
+h2, h3, h6{
+  
+  text-align: center;
+  font-family: Segoe Script;
+  text-shadow: 2px 2px 5px yellow;
+  font-size: 30px;
+  
+}  
+p {
+  text-align: justify;
+  font-family: Verdana;
+  color: white; 
+  border-style: dotted;
+  border-color: pink;
+  border-width: thick;
+}
+.container2{
+    margin-top: 5%;
+    
+}
+.stick
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+    
