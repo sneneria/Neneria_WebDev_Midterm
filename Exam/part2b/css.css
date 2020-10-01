@@ -1,7 +1,3 @@
-body{
-	height : 1700px;
-	background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%)
-}
 .header {
   border-bottom: 1px solid #fff;
   margin: -10px;
@@ -52,15 +48,22 @@ body{
   background-color: #ffff80;
   border-bottom: 1px solid #fff;
 }
-#bio
+
+body{
+	height : 1700px;
+	background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%)
+}
+
+ #bio
 {
 	margin: auto;
 	margin: 10%;
 	height:300px;
-	width: 80%;	
+	width: 80%;
+	
+	
+	
 }
-
-
 #pic
 {
 	width:350px;
@@ -96,14 +99,14 @@ body{
 }
 
 #portfolio{
- 	width:100%;
-	box-sizing: border-box;
- 	font-family: calibri;
- 	display: flex;
- 	flex-direction: column;
-	align-items: center;
- 	justify-content: center;
-	padding: 10px 10px;
+ width:100%;
+ box-sizing: border-box;
+ font-family: calibri;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 10px 10px;
 }
 
 .p-headind{
