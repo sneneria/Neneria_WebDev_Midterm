@@ -1,0 +1,42 @@
+body{
+	background-color: #ffcccc; 
+
+}
+.invoice-box {
+        width: 500px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family:  Arial;
+        background-color: #ffffcc;
+    }
+    
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+	.header{
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+ #table1 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: center;
+  border: 3px solid black; 
+}
+#right{
+  text-align: right; 
+}
