@@ -53,14 +53,6 @@ body{
 	height : 1700px;
 	background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%)
 }
-h1{
-	text-align: center;
-	font-family: Ink Free;
-	background: -webkit-linear-gradient(#660099, #a60059);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent
-	
-}
  #bio
 {
 	margin: auto;
@@ -120,11 +112,12 @@ h1{
  font-family: Ink Free;
  font-size: 50px;
  text-align: center;
- color: #0073e6;
  font-weight: 400;
  padding: 10px 10px;
  letter-spacing: 2px;
- 
+ background: -webkit-linear-gradient(#660099, #a60059);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparen;
  
  
 }
