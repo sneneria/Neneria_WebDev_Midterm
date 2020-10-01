@@ -1,3 +1,7 @@
+body{
+	height : 1700px;
+	background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%)
+}
 .header {
   border-bottom: 1px solid #fff;
   margin: -10px;
@@ -47,11 +51,6 @@
   transition: 1s;
   background-color: #ffff80;
   border-bottom: 1px solid #fff;
-}
-
-body{
-	height : 1700px;
-	background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%)
 }
 #bio
 {
