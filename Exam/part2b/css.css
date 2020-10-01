@@ -64,14 +64,7 @@ body{
 	
 	
 }
-h1{
-	text-align: center;
-	font-family: Ink Free;
-	background: -webkit-linear-gradient(#660099, #a60059);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent
-	
-}
+
 #pic
 {
 	width:350px;
@@ -83,7 +76,7 @@ h1{
 
 #intro_text
 {
-	margin-top: -30%;
+	margin-top: -26%;
 	display: block;
 	float: right;
 	margin-right: 50px;
@@ -107,14 +100,14 @@ h1{
 }
 
 #portfolio{
- width:100%;
- box-sizing: border-box;
- font-family: calibri;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- padding: 10px 10px;
+ 	width:100%;
+	box-sizing: border-box;
+ 	font-family: calibri;
+ 	display: flex;
+ 	flex-direction: column;
+	align-items: center;
+ 	justify-content: center;
+	padding: 10px 10px;
 }
 
 .p-headind{
