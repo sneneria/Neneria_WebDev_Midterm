@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>FormValidation</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel = "stylesheet" type = "text/css" href="css/style.css">	
+	
+</head>
+<body>
+	<div>
+	<div class = "form-descript">
+	<h1>Registration Form</h1>
+	<p>This register coming form the websites that involve education online or a school's online<br>website for profiling faculty and students.</p>
+	</div>
+	<br>
+	<hr width = "500px"/>
+	<br>
+	<div class = "container">
+		<!--form action = "">
+		
+	<table> 
+		<table >
+				<tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td colspan="2">
+                            <label for="txtFname">First Name: &nbsp;&nbsp;</label>
+                            <input type="text" id="txtFname" name="txtFname" required>    
+                        </td>
+                    </tr>
+					<tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td colspan="2">
+                            <label for="txtLname">Last Name: &nbsp;&nbsp;</label>
+                            <input type="text" id="txtLname" name="txtLname" required>    
+                        </td>
+                    </tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td colspan="2">
+                            <label for="fldEmail">Email: &nbsp;&nbsp;</label>
+                            <input type="email" id="fldEmail" name="fldEmail" placeholder="enter your email" required>    
+                        </td>
+                    </tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td colspan="2">
+                            <label for="fldPassword">Password: &nbsp;&nbsp;</label>
+                            <input type="password" id="fldPassword" name="fldPassword" required>    
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td colspan="2">
+                            <label for="radioGender">Gender: &nbsp;</label>
+                            <input type="radio" id="radioGender" name="radioGender" value="Male" required> 
+                            <label for="radioGender">Male</label>
+                            <input type="radio" id="radioGender" name="radioGender" value="Female" required> 
+                            <label for="radioGender">Female</label>   
+                        </td>
+                    </tr>
+                
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td colspan="2">
+                            <label for="pickerBdate">Birth Date: &nbsp;&nbsp;</label>
+                            <input type="date" id="pickerBdate" name="pickerBdate" required>    
+                        </td>
+                    </tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td colspan="2">
+                            <label for="fldTel">Telephone #: &nbsp;&nbsp;</label>
+                            <input type="tel" id="fldTel" name="fldTel" placeholder="Tel#" required/>    
+                        </td>
+                    </tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td colspan="2">
+                            <label for="textDname">Display Name: &nbsp;&nbsp;</label>
+                            <input type="text" id="textDname" name="textDname" required>    
+                        </td>
+                    </tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td colspan="2">
+                            <input type="checkbox" id="chkboxAgreement" name="chkboxAgreement" value="I agree to the Terms of Service and Privacy Policy" required>    
+                            <label for="chkboxAgreement">I agree to the <em>Terms of Service</em> and <em>Privacy Policy</em></label>
+                        </td>
+                    </tr>   
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td >
+                            <button type ="reset" id ="btnReset">Clear</button>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr><td colspan="2" align="right"></td></tr>
+                    <tr align="right">
+                        <td>
+                            <button type="submit" id="btnCreate">Create Account</button>
+                        </td>
+                    </tr>
+                </table>
+            </form> -->
+
+            <form onsubmit="submitMessagee()" id="form" action="">
+                <div id="error-message"></div>
+                <div class="flex-container">
+                    <div>
+                         <div>
+                            <label for="txtFname">First Name:</label>
+                        </div>
+						 <div>
+                            <label for="txtLname">Last Name:</label>
+                        </div>
+                        <div>
+                            <label for="fldEmail">Email:</label>
+                        </div>
+                        <div>
+                            <label for="fldPassword">Password:</label>
+                        </div>
+                       
+                        <div>
+                            <label for="radioGender">Gender:</label>
+                        </div>
+                    
+                        <div>
+                            <label for="pickerBdate">Birth Date:</label>
+                        </div>
+                        <div>
+                            <label for="fldTel">Telephone #:</label>
+                        </div>
+                        <div>
+                            <label for="textDname">Display Name:</label>
+                        </div>
+
+                        <div class="agreement">
+                            <input type="checkbox" id="chkboxAgreement" name="chkboxAgreement" value="I agree to the Terms of Service and Privacy Policy" required>    
+                            <label for="chkboxAgreement">I agree to the <em>Terms of Service</em> and <em>Privacy Policy</em></label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="text" id="txtFname" name="txtFname" required>
+                            <div id="fname-em" class="error-message"></div>
+                        </div>
+						 <div>
+                            <input type="text" id="txtLname" name="txtLname" required>
+                            <div id="lname-em" class="error-message"></div>    
+                        </div>
+                        <div>
+                            <input type="email" id="fldEmail" name="fldEmail" placeholder="create your email" required>
+                        </div>
+                        <div>
+                            <input type="password" id="fldPassword" name="fldPassword" required>
+                            <div id="password-em" class="error-message"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="radioGender">Male</label>
+                            <input type="radio" id="radioGender" name="radioGender" value="Male" required> 
+                            <label for="radioGender">Female</label>   
+                            <input type="radio" id="radioGender" name="radioGender" value="Female" required> 
+                        </div>
+                     
+                        <div>
+                            <input type="date" id="pickerBdate" name="pickerBdate" required>
+                        </div>
+                        <div>
+                            <input type="tel" id="fldTel" name="fldTel" placeholder="Tel#" required/>
+                            <div id="telnum-em" class="error-message"></div>      
+                        </div>
+                        <div>
+                            <input type="text" id="textDname" name="textDname" required>
+                            <div id="dname-em" class="error-message"></div>     
+                        </div>
+                        <div class="button-container">
+                            <button class = "reset" id="btnReset" type = "clear">Clear</button>
+                            <button class="create" type="submit" id="btnCreate">Create Account</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br>
+		<br>
+        <hr width="500px"/>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

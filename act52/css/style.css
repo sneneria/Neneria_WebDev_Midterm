@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+body 
+{
+	background-color: pink;
+	padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+.form-descript {
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 50px;
+}
+.container {
+    width: 500px;
+    margin: 0px auto;
+    padding-right: 15px;
+    background-color: #60b3a9;
+}
+
+.flex-container {
+    display: flex;
+    align-items: start;
+    font-size: 0.75rem;
+}
+
+.flex-container div:nth-child(1) div {
+    margin: 18px 0px;
+}
+
+.agreement {
+    font-size: 0.65rem;
+}
+
+.flex-container div:nth-child(1) div label {
+    position: relative;
+    left: 50px;
+}
+
+.flex-container div:nth-child(2) div input, .flex-container div:nth-child(2) div select {
+    padding: 8px 25px;
+    margin: 18px 0px;
+}
+
+
+
+.flex-container div:nth-child(2) div:nth-child(3) input {
+    margin: 35px 0px 10px 0px;
+}
+
+.flex-container div:nth-child(2) div:nth-child(5) input {
+    margin: 10px 0px 15px 0px;
+}
+
+.flex-container div:nth-child(2) div:nth-child(6) input {
+    margin: 18px 0px 38px 0px;
+}
+
+
+
+.flex-container div:first-child div ~ div {
+    margin: 58px 0px;
+}
+
+.flex-container div:first-child div:nth-child(2) {
+    margin: 75px 0px 70px 0px;
+}
+
+.flex-container div:first-child div:nth-last-child(3) {
+    margin-bottom: 50px;
+}
+
+
+.flex-container div:first-child div:nth-last-child(1) {
+    margin: 80px 0px;
+}
+
+.flex-container div:first-child div:nth-last-child(1) input {
+    position: relative;
+    left: 45px;
+}
+
+.error-message {
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 0.52rem;
+    color: #f70000;
+    height: 15px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 50px;
+}
+
+.button-container button {
+    width: 150px;
+    padding: 8px 5px;
+
+    margin: 15px 0px 0px;
+}
+
+
+
+input:invalid {
+    border: solid 1px #e97272;
+}
+
+input:valid {
+    border: solid 1px #8de6af;
+}
+
+.reset, .create {
+    border: none;
+    outline: 0px;
+}
+
+.reset {
+    color: #f0d71f;
+    cursor: pointer;
+    border: solid 1px #3e4bde;
+	
+}
+
+.reset:hover {
+    color: #FFF;
+    background-color: #f14d4d;
+}
+
+.create {
+    color: #f0d71f;
+    cursor: pointer;
+    border: solid 1px #40f37c;
+    
+}
+
+.create:hover {
+    color: #FFF;
+    background-color: #40f37c;
+}
+
